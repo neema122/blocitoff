@@ -1,2 +1,13 @@
-<%= form_for [list, item], remote: true do |f| %>
-<% end %>
+<h2>New Item</h2>
+<div class="row">
+  <div class="col-md-3">
+
+    <%= form_for @item do |form| %>
+    <div class="form-group">
+      <%= form.text_field :name, class: 'form-control', placeholder: 'Item' %>
+    </div>
+    <%= form.submit 'Save', class: 'btn btn-info' %>
+    <% end %>
+
+  </div>
+</div>

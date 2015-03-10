@@ -1,2 +1,4 @@
-<%= content_tag :div, id: "item-#{item.id}" do %>
-<% end %>
+<tr>
+  <td><%= item.name %></td>
+  <td><%= link_to "Complete", item, method: :delete, class: 'btn btn-success' %></td>
+</tr>
