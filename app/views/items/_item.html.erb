@@ -1,5 +1,5 @@
 <tr>
   <td><%= item.name %></td>
-  <td><%= item.days_left %> </td>
+  <td><%= time_ago_in_words(item.created_at + 7.days) %> </td>
   <td><%= link_to "Complete", item, method: :delete, class: 'btn btn-success' %></td>
 </tr>

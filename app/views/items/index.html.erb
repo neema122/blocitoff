@@ -4,6 +4,11 @@
 
 <% if @items.any? %>
 <table class="table">
+  <tr>
+    <th>Item</th>
+    <th>Time Left</th>
+    <th></th>
+  </tr>
   <%= render @items %>
 </table>
 <% else %>
